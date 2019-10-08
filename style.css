@@ -3,33 +3,14 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(img/bg.jpg) no-repeat center fixed;
-  background-position: top;
+  background: url(img/bg.jpg) no-repeat top fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
 }
-@media screen and (min-width: 0px){
-  .login-box{
-  width: 80%;
-  height: auto;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #34495E;
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 12px;
-  padding: 1%;
-}
-}
-
-@media screen and (min-width: 800px){
-  .login-box{
-  width: 30%;
-  height: auto;
+ .container{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,16 +18,13 @@ body{
   color: #34495E;
   background-color: rgba(255,255,255,0.8);
   border-radius: 12px;
-  padding: 1%;
+  padding: 15px;
 }
-}
-
-
-.login-box h1{
+.container h1{
   float: left;
   font-size: 40px;
   border-bottom: 6px solid #FBD114;
-  margin-bottom: 10%;
+  margin-bottom: 10px;
   padding: 5px 0;
 }
 .textbox{
@@ -58,21 +36,22 @@ body{
   border-bottom: 1px solid #FBD114;
 }
 .textbox i{
-  width: 26px;
+  width: 25px;
   float: left;
   text-align: center;
+  padding-top: 8px;
 }
 .textbox input{
   border: none;
   outline: none;
   background: none;
   color: #34495E;
-  font-size: 18px;
+  font-size: 20px;
   width: 80%;
   float: left;
   margin: 0 10px;
 }
-.btn{
+.botao{
   width: 100%;
   background: none;
   border: 2px solid #FBD114;
