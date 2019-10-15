@@ -65,10 +65,12 @@ $app->get("/admin/users", function(){
 
 	$page = new PageAdmin();
 
-	$page->setTpl("users", array(
-		"users"=>$users));
+	$page->setTpl("users",array(
+		"users"=>$users
+	));
 
 });
+
 
 $app->get("/admin/users/create", function(){
 
