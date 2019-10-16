@@ -66,11 +66,19 @@ $app->get("/admin/users", function(){
 	
 	$page = new PageAdmin();
 
+<<<<<<< HEAD
 	$page->setTpl("users", array(
 		"users"=>$users
 	
 	));
+=======
+	$page->setTpl("users",array(
+		"users"=>$users
+	));
+
+>>>>>>> 0af730f50e83db39c6256288a4c0cca131dde8ac
 });
+
 
 $app->get("/admin/users/create", function(){
 

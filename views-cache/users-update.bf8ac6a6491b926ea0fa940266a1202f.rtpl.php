@@ -18,7 +18,11 @@
         </div>
         <!-- /.box-header -->
         <!-- form start -->
+<<<<<<< HEAD
         <form role="form" action="/index.php/admin/users/<?php echo htmlspecialchars( $user["iduser"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" method="post">
+=======
+        <form role="form" action="/admin/users/<?php echo htmlspecialchars( $user["iduser"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" method="post">
+>>>>>>> 0af730f50e83db39c6256288a4c0cca131dde8ac
           <div class="box-body">
             <div class="form-group">
               <label for="desperson">Nome</label>
