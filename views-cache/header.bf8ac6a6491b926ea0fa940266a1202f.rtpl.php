@@ -267,8 +267,6 @@ desired effect
         <ul class="treeview-menu">
           <li><a href="#">Link in level 2</a></li>
           <li><a href="#">Link in level 2</a></li>
-<<<<<<< HEAD
-=======
           <li><a href="#">Link in level 2</a></li>
 
         </ul>
@@ -284,7 +282,6 @@ desired effect
           <li><a href="#">Link in level 2</a></li>
           <li><a href="#">Link in level 2</a></li>
 
->>>>>>> 0af730f50e83db39c6256288a4c0cca131dde8ac
         </ul>
       </li>
     </ul>

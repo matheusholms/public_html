@@ -6,13 +6,8 @@
     Lista de Usuários
   </h1>
   <ol class="breadcrumb">
-<<<<<<< HEAD
     <li><a href="/index.php/admin"><i class="fa fa-dashboard"></i> Home</a></li>
     <li><a href="/index.php/admin/users">Usuários</a></li>
-=======
-    <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li><a href="/admin/users">Usuários</a></li>
->>>>>>> 0af730f50e83db39c6256288a4c0cca131dde8ac
     <li class="active"><a href="/admin/users/create">Cadastrar</a></li>
   </ol>
 </section>
@@ -28,11 +23,7 @@
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-<<<<<<< HEAD
         <form role="form" action="/index.php/admin/users/create" method="post">
-=======
-        <form role="form" action="/admin/users/create" method="post">
->>>>>>> 0af730f50e83db39c6256288a4c0cca131dde8ac
           <div class="box-body">
             <div class="form-group">
               <label for="desperson">Nome</label>
