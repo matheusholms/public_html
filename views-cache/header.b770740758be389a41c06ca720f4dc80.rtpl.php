@@ -105,9 +105,15 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">Produtos</a></li>
                         <li><a href="#">Carrinho</a></li>
+                        <li><a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">Categorias</a>
+                            <ul class="dropdown-menu">
+                                <?php require $this->checkTemplate("categories-menu");?>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>  
             </div>
