@@ -65,11 +65,11 @@ $app->post("/admin/products/:idproduct", function($idproduct){
 	$product->get((int)$idproduct);
 
 	$product->setData($_POST);
-
+	
 	$product->save();
 
 	$product->setPhoto($_FILES["file"]);
-
+	
 	header('Location: /index.php/admin/products');
 	exit;
 
