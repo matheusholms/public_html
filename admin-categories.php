@@ -88,7 +88,7 @@ $app->post("/admin/categories/:idcategory", function($idcategory){
 
 	$category->save();
 
-	header("Location: /admin/categories");
+	header("Location: /index.php/admin/categories");
 	exit;
 
 });
