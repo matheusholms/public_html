@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>AdminLTE 2 | Starter</title>
+<title>Painel Administrativo</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <!-- Bootstrap 3.3.6 -->
@@ -60,9 +60,9 @@ desired effect
   <!-- Logo -->
   <a href="index2.html" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>A</b>LT</span>
+    <span class="logo-mini"><b></b>NT</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Admin</b>LTE</span>
+    <span class="logo-lg"><b>Administrativo </b>NT</span>
   </a>
 
   <!-- Header Navbar -->
@@ -254,11 +254,11 @@ desired effect
 
     <!-- Sidebar Menu -->
     <ul class="sidebar-menu">
-      <li class="header">HEADER</li>
+      <li class="header">Menu</li>
       <!-- Optionally, you can add icons to the links -->
       <li><a href="/index.php/admin/users"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
-      <li><a href="/index.php/admin/categories"><i class="fa fa-link"></i> <span>Categorias</span></a></li>
-      <li><a href="/index.php/admin/products"><i class="fa fa-link"></i> <span>Produtos</span></a></li>
+      <li><a href="/index.php/admin/categories"><i class="fa fa-archive"></i></i> <span>Categorias</span></a></li>
+      <li><a href="/index.php/admin/products"><i class="fa fa-tasks"></i> <span>Produtos</span></a></li>
       <li class="treeview">
         <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
           <span class="pull-right-container">
@@ -269,20 +269,6 @@ desired effect
           <li><a href="#">Link in level 2</a></li>
           <li><a href="#">Link in level 2</a></li>
           <li><a href="#">Link in level 2</a></li>
-
-        </ul>
-      </li>
-      <li class="treeview">
-        <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="#">Link in level 2</a></li>
-          <li><a href="#">Link in level 2</a></li>
-          <li><a href="#">Link in level 2</a></li>
-
         </ul>
       </li>
     </ul>

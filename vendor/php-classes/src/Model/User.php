@@ -223,5 +223,6 @@ class User extends Model {
 			":iduser"=>$this->getiduser()
 		));
 	}
+	
 }
 ?>

@@ -58,6 +58,7 @@
           <!-- /.box-body -->
           <div class="box-footer">
             <button type="submit" class="btn btn-primary">Salvar</button>
+            <a href="/index.php/admin/products" class="btn btn-danger">Cancelar</a>
           </div>
         </form>
       </div>
