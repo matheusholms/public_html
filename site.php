@@ -4,6 +4,7 @@ use \Ecommerce\Page;
 use \Ecommerce\Model\User;
 use \Ecommerce\Model\Category;
 use \Ecommerce\Model\Product;
+use \Ecommerce\Model\Cart;
 
 $app->get('/', function() {
 
@@ -18,8 +19,6 @@ $app->get('/', function() {
 });
 
 $app->get("/categories/:idcategory", function($idcategory){
-
-	User::verifyLogin();
 
 	$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
 
@@ -45,6 +44,31 @@ $app->get("/categories/:idcategory", function($idcategory){
 		'products'=>$pagination["data"],
 		'pages'=>$pages
 	]);
+
+});
+
+$app->get("/products/:desurl", function($desurl){
+
+	$product = new Product();
+
+	$product->getFromURL($desurl);
+
+	$page = new Page();
+
+	$page->setTpl("product-detail", [
+		'product'=>$product->getValues(),
+		'categories'=>$product->getCategories()
+	]);
+
+});
+
+$app->get("/cart", function(){
+
+	$cart = Cart::getFromSession();
+
+	$page = new Page();
+
+	$page->setTpl("cart");
 
 });
 
