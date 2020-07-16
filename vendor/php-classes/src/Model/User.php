@@ -34,7 +34,7 @@ class User extends Model {
 			!$_SESSION[User::SESSION] 
 			|| 
 			!(int)$_SESSION[User::SESSION]["iduser"] > 0 
-		) 
+			) 
 		{
 			//não está logado
 			return false;
@@ -69,7 +69,7 @@ class User extends Model {
 
 		if (count($results) === 0){
 
-			throw new \Exception("Usuário inexistente ou senha invalida");
+			throw new \Exception("Usuário inexistente ou senha inválida");
 			
 		}
 
@@ -95,7 +95,7 @@ class User extends Model {
 
 		if(User::checkLogin($inadmin)){
 
-			header("Location: /admin/login");
+			header("Location: /admin");
 			exit;
 		
 		}

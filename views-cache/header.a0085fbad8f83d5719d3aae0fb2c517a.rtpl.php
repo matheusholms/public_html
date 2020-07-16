@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <!--
     Hcode Store by hcode.com.br
 -->
@@ -110,7 +110,7 @@
                         <li><a href="/cart">Carrinho</a></li>
                         <li><a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">Categorias</a>
                             <ul class="dropdown-menu">
-                                {include="categories-menu"}
+                                <?php require $this->checkTemplate("categories-menu");?>
                             </ul>
                         </li>
 
