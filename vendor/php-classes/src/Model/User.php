@@ -30,18 +30,17 @@ class User extends Model {
 
 		if (
 			!isset($_SESSION[User::SESSION])
-			|| 
-			!$_SESSION[User::SESSION] 
-			|| 
-			!(int)$_SESSION[User::SESSION]["iduser"] > 0 
-			) 
-		{
-			//não está logado
+			||
+			!$_SESSION[User::SESSION]
+			||
+			!(int)$_SESSION[User::SESSION]["iduser"] > 0
+		) {
+			//Não está logado
 			return false;
 
 		} else {
 
-			if ($inadmin === true && (bool)$_SESSION[User::SESSION]["iduser"] === true) {
+			if ($inadmin === true && (bool)$_SESSION[User::SESSION]['inadmin'] === true) {
 
 				return true;
 
@@ -86,18 +85,21 @@ class User extends Model {
 			return $user;
 
 		}else{
-
-			throw new \Exception("Usuário inexistente ou senha invalida");
+			throw new \Exception("Usuário inexistente ou senha inválida");
 		}
 	}
 
 	public static function verifyLogin($inadmin = true){
 
-		if(User::checkLogin($inadmin)){
+		if (!User::checkLogin($inadmin)) {
 
-			header("Location: /admin");
+			if ($inadmin) {
+				header("Location: /index.php/admin/login");
+			} else {
+				header("Location: /index.php/login");
+			}
 			exit;
-		
+
 		}
 
 	}

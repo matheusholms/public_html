@@ -88,10 +88,8 @@ $app->get("/cart/:idproduct/add", function($idproduct){
 	for ($i = 0; $i < $qtd; $i++){
 
 		$cart->addProduct($product);
-	
-	}
 
-	$cart->addProduct($product);
+	}
 
 	header("Location: /cart");
 	exit;

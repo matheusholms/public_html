@@ -109,7 +109,7 @@ class Cart extends Model {
 
 		$sql = new Sql();
 
-		$sql -> query("INSERT INTO tb_cartsproducts (idcart, idproduct) VALUES (:idcart, :idproduct AND dtremoved IS NULL)", [
+		$sql -> query("INSERT INTO tb_cartsproducts (idcart, idproduct) VALUES (:idcart, :idproduct)", [
 			':idcart'=>$this->getidcart(),
 			':idproduct'=>$product->getidproduct()
 		]);
@@ -134,7 +134,7 @@ class Cart extends Model {
 		}
 	}
 
-	public function getidproducts(){
+	public function getProducts(){
 
 		$sql = new Sql();
 	
