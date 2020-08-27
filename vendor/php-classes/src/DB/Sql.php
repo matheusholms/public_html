@@ -4,10 +4,10 @@ namespace Ecommerce\DB;
 
 class Sql {
 
-	const HOSTNAME = "localhost";
-	const USERNAME = "id11145052_matheusholms";
-	const PASSWORD = "matheus";
-	const DBNAME = "id11145052_ecommerce";
+	const HOSTNAME = "185.201.11.86";
+	const USERNAME = "u222787708_matheusholms";
+	const PASSWORD = "Vid@2112";
+	const DBNAME = "u222787708_ecommerce";
 
 	private $conn;
 
