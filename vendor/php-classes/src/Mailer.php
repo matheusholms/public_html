@@ -6,9 +6,9 @@ use Rain\Tpl;
 
 class Mailer{
 
-	const USERNAME = "matheus.holms01@gmail.com";
+	const USERNAME = "contato@matheusholms.com.br";
 	const PASSWORD = "Vid@2112";
-	const NAME_FROM = "MatheusPHP";
+	const NAME_FROM = "Matheus Holms";
 
 	private $mail;
 	
@@ -41,7 +41,7 @@ class Mailer{
 		//Ask for HTML-friendly debug output
 		$this->mail->Debugoutput = 'html';
 		//Set the hostname of the mail server
-		$this->mail->Host = 'smtp.gmail.com';
+		$this->mail->Host = 'smtp.hostinger.com.br';
 		// use
 		//$this->mail->Host = gethostbyname('smtp.gmail.com');
 		// if your network does not support SMTP over IPv6
