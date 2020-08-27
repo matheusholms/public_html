@@ -9,8 +9,8 @@ use \Ecommerce\Mailer;
 class User extends Model {
 
 	const SESSION = "User";
-	const SECRET = "HcodePhph7_Secret";
-	const SECRET_IV = "HcodePhp7_Secret_IV";
+	const SECRET = "ecommerce";
+	const SECRET_IV = "ecommerce_iv";
 
 	public static function getFromSession(){
 
