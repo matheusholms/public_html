@@ -96,7 +96,7 @@ $app->get("/cart/:idproduct/add", function($idproduct){
 
 });
 
-$app->get("/cart/:idproduct/minus", function($idproduct){
+$app->get("/index.php/cart/:idproduct/minus", function($idproduct){
 
 	$product = new Product();
 
@@ -111,7 +111,7 @@ $app->get("/cart/:idproduct/minus", function($idproduct){
 
 });
 
-$app->get("/cart/:idproduct/remove", function($idproduct){
+$app->get("/index.php/cart/:idproduct/remove", function($idproduct){
 
 	$product = new Product();
 
