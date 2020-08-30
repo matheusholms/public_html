@@ -11,6 +11,8 @@ $app->get('/admin', function() {
 	$page = new PageAdmin();
 
 	$page->setTpl("index");
+	header("Location: /index.php/admin");
+	exit;
 
 });
 
