@@ -87,14 +87,12 @@ class User extends Model
 	public static function verifyLogin($inadmin = true)
 	{
 
-		if (User::checkLogin(!$inadmin)) {
-
-			header("Location: /index.php/admin/login");
-			exit;
-		}
-		if (User::checkLogin($inadmin)) {
-
-			header("Location: /index.php/admin");
+		if (!User::checkLogin($inadmin)) {
+			if ($inadmin) {
+				header("Location: /index.php/admin/login");
+			} else {
+				header("Location: /index.php/login");
+			}
 			exit;
 		}
 	}
