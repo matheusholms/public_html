@@ -95,7 +95,7 @@ class User extends Model {
 
 		if(User::checkLogin($inadmin)){
 
-			header("Location: /admin/login");
+			header("Location: /index.php/admin/login");
 			exit;
 		
 		}
@@ -267,4 +267,3 @@ class User extends Model {
 	}
 	
 }
-?>
