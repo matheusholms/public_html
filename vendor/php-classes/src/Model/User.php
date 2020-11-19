@@ -92,6 +92,11 @@ class User extends Model
 			header("Location: /index.php/admin/login");
 			exit;
 		}
+		if (User::checkLogin($inadmin)) {
+
+			header("Location: /index.php/admin");
+			exit;
+		}
 	}
 
 	public static function logout()
