@@ -55,7 +55,7 @@ $app->get("/admin/categories/:idcategory/delete", function($idcategory){
 
 	$category->delete();
 
-	header("Location: /index.php/admin/categories");
+	header("Location: /admin/categories");
 	exit;
 
 });
@@ -148,3 +148,5 @@ $app->get("/admin/categories/:idcategory/products/:idproduct/remove", function($
 	exit;
 	
 });
+
+?>

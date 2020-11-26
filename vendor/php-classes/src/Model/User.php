@@ -12,6 +12,8 @@ class User extends Model
 	const SESSION = "User";
 	const SECRET = "ecommerce";
 	const SECRET_IV = "ecommerce_iv";
+	const ERROR = "UserError";
+	const ERROR_REGISTER = "UserErrorRegister";
 
 	public static function getFromSession()
 	{
@@ -40,7 +42,7 @@ class User extends Model
 			return false;
 		} else {
 
-			if ($inadmin === true && (bool)$_SESSION[User::SESSION]["inadmin"] === true) {
+			if ($inadmin === true && (bool)$_SESSION[User::SESSION]['inadmin'] === true) {
 
 				return true;
 			} else if ($inadmin === false) {
@@ -96,7 +98,6 @@ class User extends Model
 			exit;
 		}
 	}
-
 	public static function logout()
 	{
 
@@ -130,14 +131,13 @@ class User extends Model
 
 	public function get($iduser)
 	{
-
 		$sql = new Sql();
-
 		$results = $sql->select("SELECT * FROM tb_users a INNER JOIN tb_persons b USING(idperson) WHERE a.iduser = :iduser", array(
 			":iduser" => $iduser
 		));
-
-		$this->setData($results[0]);
+		$data = $results[0];
+		$data['desperson'] = utf8_encode($data['desperson']);
+		$this->setData($data);
 	}
 
 	public function update()
@@ -262,5 +262,27 @@ class User extends Model
 			":password" => $password,
 			":iduser" => $this->getiduser()
 		));
+	}
+
+	public static function setError($msg)
+	{
+		$_SESSION[User::ERROR] = $msg;
+	}
+
+	public static function getError()
+	{
+		$msg = (isset($_SESSION[User::ERROR]) && $_SESSION[User::ERROR]) ? $_SESSION[User::ERROR] : '';
+		User::clearError();
+		return $msg;
+	}
+
+	public static function clearError()
+	{
+		$_SESSION[User::ERROR] = NULL;
+	}
+
+	public static function setErrorRegister($msg)
+	{
+		$_SESSION[USER::ERROR_REGISTER] = $msg;
 	}
 }
