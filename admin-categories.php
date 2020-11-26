@@ -40,7 +40,7 @@ $app->post("/admin/categories/create", function(){
 
 	$category->save();
 
-	header("Location: /index.php/admin/categories");
+	header("Location: /admin/categories");
 	exit;
 
 });
@@ -88,7 +88,7 @@ $app->post("/admin/categories/:idcategory", function($idcategory){
 
 	$category->save();
 
-	header("Location: /index.php/admin/categories");
+	header("Location: /admin/categories");
 	exit;
 
 });
@@ -125,7 +125,7 @@ $app->get("/admin/categories/:idcategory/products/:idproduct/add", function($idc
 
 	$category->addProduct($product);
 
-	header("Location: /index.php/admin/categories/".$idcategory."/products");
+	header("Location: /admin/categories/".$idcategory."/products");
 	exit;
 
 });
@@ -144,7 +144,7 @@ $app->get("/admin/categories/:idcategory/products/:idproduct/remove", function($
 
 	$category->removeProduct($product);
 
-	header("Location: /index.php/admin/categories/".$idcategory."/products");
+	header("Location: /admin/categories/".$idcategory."/products");
 	exit;
 	
 });

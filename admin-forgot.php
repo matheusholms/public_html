@@ -19,7 +19,7 @@ $app->post("/admin/forgot", function(){
 
 	$user = User::getForgot($_POST["email"]);
 
-	header("Location: /index.php/admin/forgot/sent");
+	header("Location: /admin/forgot/sent");
 	exit;
 
 });

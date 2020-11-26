@@ -55,24 +55,24 @@
                   <a href="#"><i class="fa fa-heart"></i> Lista de Desejos</a>
                 </li>
                 <li>
-                  <a href="/index.php/cart"
+                  <a href="/cart"
                     ><i class="fa fa-shopping-cart"></i> Meu Carrinho</a
                   >
                 </li>
                 {if="checkLogin(false)"}
                 <li>
-                  <a href="/index.php/profile"
+                  <a href="/profile"
                     ><i class="fa fa-user"></i> {function="getUserName()"}</a
                   >
                 </li>
                 <li>
-                  <a href="/index.php/logout"
+                  <a href="/logout"
                     ><i class="fa fa-close"></i> Sair</a
                   >
                 </li>
                 {else}
                 <li>
-                  <a href="/index.php/login"
+                  <a href="/login"
                     ><i class="fa fa-lock"></i> Login</a
                   >
                 </li>
@@ -135,7 +135,7 @@
 
           <div class="col-sm-6">
             <div class="shopping-item">
-              <a href="/index.php/cart"
+              <a href="/cart"
                 >Carrinho - R$
                 <span class="cart-amunt"></span>
                 <i class="fa fa-shopping-cart"></i>
@@ -168,8 +168,8 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li><a href="/">Home</a></li>
-              <!--<li><a href="/index.php/products">Produtos</a></li>-->
-              <li><a href="/index.php/cart">Carrinho</a></li>
+              <!--<li><a href="/products">Produtos</a></li>-->
+              <li><a href="/cart">Carrinho</a></li>
               <li>
                 <a
                   data-toggle="dropdown"

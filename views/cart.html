@@ -40,13 +40,13 @@
                       <a
                         title="Remove this item"
                         class="remove"
-                        href="/index.php/cart/{$value.idproduct}/remove"
+                        href="cart/{$value.idproduct}/remove"
                         >×</a
                       >
                     </td>
 
                     <td class="product-thumbnail">
-                      <a href="/index.php/products/{$value.desurl}"
+                      <a href="products/{$value.desurl}"
                         ><img
                           width="145"
                           height="145"
@@ -57,7 +57,7 @@
                     </td>
 
                     <td class="product-name">
-                      <a href="/index.php/products/{$value.desurl}"
+                      <a href="products/{$value.desurl}"
                         >{$value.desproduct}</a
                       >
                     </td>
@@ -74,7 +74,7 @@
                           type="button"
                           class="minus"
                           value="-"
-                          onclick="window.location.href = '/index.php/cart/{$value.idproduct}/minus'"
+                          onclick="window.location.href = 'cart/{$value.idproduct}/minus'"
                         />
                         <input
                           type="number"
@@ -89,7 +89,7 @@
                           type="button"
                           class="plus"
                           value="+"
-                          onclick="window.location.href = '/index.php/cart/{$value.idproduct}/add'"
+                          onclick="window.location.href = 'cart/{$value.idproduct}/add'"
                         />
                       </div>
                     </td>
@@ -121,7 +121,7 @@
                     <input
                       type="submit"
                       formmethod="post"
-                      formaction="/index.php/cart/freight"
+                      formaction="cart/freight"
                       value="Calcular"
                       class="button"
                     />
