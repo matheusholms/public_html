@@ -91,9 +91,9 @@ class User extends Model
 
 		if (!User::checkLogin($inadmin)) {
 			if ($inadmin) {
-				header("Location: /index.php/admin/login");
+				header("Location: /admin/login");
 			} else {
-				header("Location: /index.php/login");
+				header("Location: /login");
 			}
 			exit;
 		}
